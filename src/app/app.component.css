@@ -1,0 +1,22 @@
+/* input
+{
+  position: relative;
+  top:200px;  
+  left:150px;
+  border:2px solid;
+  height: 25px;
+}
+
+button{
+    position: relative;
+  top:200px;  
+  left:160px;
+  border:2px solid;
+} */
+table,
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }

@@ -1,0 +1,18 @@
+<input #inputs (keyup)="onenter($event);"  type="textbox" style="width:350px"/>
+<button (click)="addlist(inputs.value);inputs.value='';">Add to the list</button>
+<br/>
+<br/>
+<table>
+  <tr>
+    <th>List Entered by the User</th>
+    <th>Edit Action</th>
+    <th>Delete Action</th>
+  </tr>
+  <tr *ngFor="let array of arrayList">
+    <td>{{array}}</td>
+    <td><button (click)="editlist(array)">Edit</button></td>
+    <td><button (click)="removelist(array)">Delete</button></td>
+  </tr>
+</table>
+  
+   
